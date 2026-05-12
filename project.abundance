@@ -20,8 +20,8 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.1971356360572873,
-      "y": 0.42080378250591016,
+      "x": 0.15669755686604886,
+      "y": 0.2458628841607565,
       "uniqueID": "id-99",
       "ioValues": [
         {
@@ -36,8 +36,8 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.2971356360572873,
-      "y": 0.42080378250591016,
+      "x": 0.3251895534962089,
+      "y": 0.21985815602836878,
       "uniqueID": "id-103",
       "ioValues": [
         {
@@ -259,6 +259,10 @@
         {
           "name": "Shape 4",
           "ioValue": null
+        },
+        {
+          "name": "Shape 5",
+          "ioValue": null
         }
       ]
     },
@@ -290,8 +294,8 @@
         },
         {
           "name": "File Type",
-          "ioValue": "STL",
-          "currentEquation": "STL"
+          "ioValue": "STEP",
+          "currentEquation": "STEP"
         },
         {
           "name": "Resolution (dpi)",
@@ -303,10 +307,38 @@
           "currentEquation": "MaslowCentre"
         }
       ],
-      "type": null,
+      "type": "STEP",
       "resolution": 96,
       "importIndex": 0,
       "partName": "MaslowCentre"
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.11625947767481046,
+      "y": 0.3947990543735224,
+      "uniqueID": "id-229",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 30
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.21625947767481046,
+      "y": 0.3947990543735224,
+      "uniqueID": "id-232",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 5
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -399,6 +431,16 @@
       "ap2Name": "geometry",
       "ap1ID": "id-161",
       "ap2ID": "id-223"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-229",
+      "ap2ID": "id-232"
+    },
+    {
+      "ap2Name": "Shape 5",
+      "ap1ID": "id-232",
+      "ap2ID": "id-155"
     }
   ],
   "unitsKey": "MM",
